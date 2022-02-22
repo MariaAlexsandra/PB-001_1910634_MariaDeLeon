@@ -2,7 +2,7 @@
 /******SIMULADOR DE CITAS DENTALES*****/
 /**************************************/
 
-//María Alexsandra De León Aguilera
+//MarÃ­a Alexsandra De LeÃ³n Aguilera
 
 #include <iostream>
 
@@ -15,7 +15,7 @@ int main() {
 	float precio_total, precio_tratamiento, precio_unitario;
  
 	do {
-/*MENÚ DE OPCIONES*/
+/*MENÃš DE OPCIONES*/
 		cout << endl << "*****BIENVENIDO A DENTALIA*****" << endl <<
 			"Seleccione" << endl <<
 			"1. Agendar citas" << endl <<
@@ -25,11 +25,11 @@ int main() {
 			"5. Limpiar pantalla" << endl <<
 			"6. Salir" << endl <<
 			"Su opcion: ";
-		cin >> opcion_m; //Variable para la opcion de menú
+		cin >> opcion_m; //Variable para la opcion de menÃº
 
 		switch (opcion_m) {
 
-//*SELECCIÓN 1*//
+//*SELECCIÃ“N 1*//
 		case 1:
 			do {
 	//NUMERO DE CITA: se agrega un numero mas al recuento de citas original:
@@ -37,18 +37,17 @@ int main() {
 					cout << endl << "Numero de cita: " << num_cit << endl;	//Se muestra en pantalla el numero de cita correspondiente
 	//NOMBRE: se pide el nombre al usuario:
 					cout << "Nombre de paciente: " << endl;
-					cin.ignore(); //funcion para ignorar el buffer de la línea anterior y no entrometa con la siguiente función.
-					cin.getline(nombre, 50, '\n'); /*funcion que permite la entrada de cadena de caracteres :
-													primero la variable que se leerá, la cantidad limitada de
-													caracteres permitidos y que terminará cuando el usuario ingrese un enter*/
+					cin.ignore(); //funcion para ignorar el buffer de la lÃ­nea anterior y no entrometa con la siguiente funciÃ³n.
+					cin.getline(nombre, 50, '\n'); /*funcion que permite la entrada de cadena de caracteres:primero la variable que se leerÃ¡, 
+									la cantidad limitada de caracteres permitidos y que terminarÃ¡ cuando el usuario ingrese un enter*/
 	//HORA: en un formato de 24, se pide al usuario la hora de la cita:
 					cout << "Hora (24h): " << endl;
 					cin >> hora;
-	//TRATAMIENTO: De acuerdo al listado, el usuario deberá elegir una opción
+	//TRATAMIENTO: De acuerdo al listado, el usuario deberÃ¡ elegir una opciÃ³n
 					cout << "Ingrese nombre de tratamiento" << endl;
 					cin.ignore();
 					cin.getline (tratamiento, 20,'\n');
-	//DESCRIPCIÓN: breve explicación del tratamiento
+	//DESCRIPCIÃ“N: breve explicaciÃ³n del tratamiento
 					cout << "Descripcion: " << endl;
 					cin.ignore();
 					cin.getline(descripcion, 100, '\n');
@@ -58,67 +57,67 @@ int main() {
 	//CANTIDAD DE TRATAMIENTO
 					cout << "Ingrese cantidad de tratamiento: ";
 					cin >> cantidad_tratamiento;
-	//PRECIO UNITARIO: El precio según el tipo y la cantidad de tratamientos previamente.
+	//PRECIO UNITARIO: El precio segÃºn el tipo y la cantidad de tratamientos previamente.
 					precio_unitario = precio_tratamiento * cantidad_tratamiento;
 					cout << "Coste unitario $ " << precio_unitario << endl;
-	//PRECIO TOTAL: El precio total del tratamiento más los impuestos.
+	//PRECIO TOTAL: El precio total del tratamiento mÃ¡s los impuestos.
 					precio_total = precio_unitario * .16 + precio_unitario;
 					cout << "Coste total $ " << precio_total << endl;
 	//AGENDAR CITA NUEVA
-					cout << "¿Desea agendar una cita nueva?" << endl << "Ingrese 1 para si y 2 para no: ";
+					cout << "Â¿Desea agendar una cita nueva?" << endl << "Ingrese 1 para si y 2 para no: ";
 					cin >> opcion_1;
 				
 			} while (opcion_1 == 1);
-			//REGRESAR AL MENÚ (1) O SALIR (2)
-			cout << "¿Volver al menu? Ingrese 1 para volver y 2 para salir del programa: ";
+			//REGRESAR AL MENÃš (1) O SALIR (2)
+			cout << "Â¿Volver al menu? Ingrese 1 para volver y 2 para salir del programa: ";
 			cin >> opcion_m;
 			break;
 
 			system("pause");
 
-//*SELECCIÓN 2*//
+//*SELECCIÃ“N 2*//
 		case 2:
 			cout << "Escogio la opcion 2" << endl;
 			
-			//REGRESAR AL MENÚ (1) O SALIR (2)
-			cout << "¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
+			//REGRESAR AL MENÃš (1) O SALIR (2)
+			cout << "Â¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
 			cin >> opcion_m;
 			break;
 
 
-//*SELECCIÓN 3*//
+//*SELECCIÃ“N 3*//
 		case 3:
 			cout << "Escogio la opcion 3" << endl;
 
-			//REGRESAR AL MENÚ (1) O SALIR (2)
-			cout << "¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
+			//REGRESAR AL MENÃš (1) O SALIR (2)
+			cout << "Â¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
 			cin >> opcion_m;
 			break;
 
 
-//*SELECCIÓN 4*//
+//*SELECCIÃ“N 4*//
 		case 4:
 			cout << "Escogio la opcion 4" << endl;
 			
-			//REGRESAR AL MENÚ (1) O SALIR (2)
-			cout << "¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
+			//REGRESAR AL MENÃš (1) O SALIR (2)
+			cout << "Â¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
 			cin >> opcion_m;
 			break;
 
 
-//*SELECCIÓN 5*//
+//*SELECCIÃ“N 5*//
 		case 5:
 			cout << "Escogio la opcion 5" << endl;
 
-			//REGRESAR AL MENÚ (1) O SALIR (2)
-			cout << "¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
+			//REGRESAR AL MENÃš (1) O SALIR (2)
+			cout << "Â¿Volver al menu? Ingrese 1 para volver y 2 para salir: ";
 			cin >> opcion_m;
 			break;
 
 
-//*SELECCIÓN 6*//
+//*SELECCIÃ“N 6*//
 		case 6:
-				cout << "¿Seguro que desea salir? Escriba 1 para volver al menu y 2 para salir del programa: ";
+				cout << "Â¿Seguro que desea salir? Escriba 1 para volver al menu y 2 para salir del programa: ";
 				cin >> opcion_m;
 			break;
 		}
